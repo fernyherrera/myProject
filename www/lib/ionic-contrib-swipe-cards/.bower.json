@@ -1,0 +1,14 @@
+{
+  "name": "ionic-contrib-swipe-cards",
+  "homepage": "https://github.com/driftyco/ionic-contrib-swipe-cards",
+  "_release": "695b780088",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "695b7800884af1273564e624c5d9aa6db504deb5"
+  },
+  "_source": "https://github.com/driftyco/ionic-contrib-swipe-cards.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/driftyco/ionic-contrib-swipe-cards.git",
+  "_direct": true
+}

@@ -1,5 +1,42 @@
 <ion-view title="Dashboard">
   <ion-content class="has-header padding">
-    <h1>Dash</h1>
+      <swipe-cards>
+          <swipe-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-swipe="cardSwiped($index)">
+              <div class="list card">
+
+                  <div class="item item-avatar">
+                      <img src="{{ card.image }}">
+                      <h2>{{ card.title }}</h2>
+                      <p>{{ card.date }}</p>
+                  </div>
+
+                  <div class="item item-body">
+                      <img class="full-image" src="img/delorean.jpg">
+                      <p>
+                        {{ card.body }}
+                      </p>
+                      <p>
+                          <a href="#" class="subdued">{{ card.likes }} Like</a>
+                          <a href="#" class="subdued">{{ card.comments }} Comments</a>
+                      </p>
+                  </div>
+
+                  <div class="item tabs tabs-secondary tabs-icon-left">
+                      <a class="tab-item" href="#">
+                          <i class="icon ion-thumbsup"></i>
+                          Like
+                      </a>
+                      <a class="tab-item" href="#">
+                          <i class="icon ion-chatbox"></i>
+                          Comment
+                      </a>
+                      <a class="tab-item" href="#">
+                          <i class="icon ion-share"></i>
+                          Share
+                      </a>
+                  </div>
+              </div>
+          </swipe-card>
+      </swipe-cards>
   </ion-content>
 </ion-view>
